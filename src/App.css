@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url("./topography3.jpg");
+  background-size: cover;
 }
 
 .App-logo {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +24,216 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: -98px;
+}
+
+.streamer-name {
+  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .App-header {
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .App-header {
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-container {
+    padding-right: 0px;
+  }
+
+  .name-title-container {
+    margin-top: 10px;
+  }
+
+  .shuffle-container {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo-container {
+    padding-right: 35px;
+  }
+
+  .name-title-container {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+
+  .shuffle-container {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-container {
+    padding-right: 25px;
+  }
+
+  .name-title-container {
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+
+  .shuffle-container {
+    margin-top: 25px;
+    padding-left: 0px
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .logo-container {
+    display:none;
+  }
+
+  .name-title-container {
+    margin-top: 10px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .shuffle {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo-container {
+    display:none;
+  }
+
+  .name-title-container {
+    margin-top: 10px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .shuffle {
+    margin-top: 15px;
+    font-size: 30px!important;
+  }
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bg-dark {
+  background-color: transparent!important;
+}
+
+.navbar-brand {
+  color: #22FF8A!important;
+  font-weight: bold;;
+  font-size: 2rem;
+}
+
+.animate {
+  opacity: 0;
+  animation-fill-mode: forwards!important;
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.75s;
+  animation-fill-mode: forwards;
+}
+
+.fade2 {
+  opacity: 0;
+  animation: fadeIn 0.75s 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.fade3 {
+  opacity: 0;
+  animation: fadeIn 0.75s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
   }
-  to {
-    transform: rotate(360deg);
+
+@keyframes fadeIns {
+  0% {opacity:0;transform: translate(0px, -25px)}
+  100% {opacity:1;transform: translate(0px, 0px)}
+  }
+
+.title {
+  color: rgba(255,255,255,0.6)
+}
+
+.hover {
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.hover2 {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.hover2:hover {
+  box-shadow: -1px 1px #22FF8A, -2px 2px #22FF8A, -3px 3px #22FF8A, -4px 4px #22FF8A;
+}
+
+.hover:hover {
+  transform: translate(4px, -4px);
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.dropdown {
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem!important;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+@media only screen and (min-width: 1921px) {
+  .container {
+    max-width: 1740px!important;
   }
 }
